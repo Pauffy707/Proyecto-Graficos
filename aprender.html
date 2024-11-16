@@ -13,7 +13,6 @@
     <!-- Estilos específicos -->
   </head>
   <body>
-    <!-- Reutiliza el header del index -->
     <header role="banner" class="header">
       <div class="logo">
         <a href="index.html" aria-label="Volver al inicio de SeñApp">
@@ -26,19 +25,22 @@
         </a>
       </div>
       <nav class="navbar" aria-label="Menú principal">
+        <span class="menu-toggle">☰</span>
+        <!-- Botón para dispositivos móviles -->
         <ul>
           <li><a href="index.html" aria-label="Ir a Inicio">Inicio</a></li>
           <li>
-            <a href="aprender.html" aria-label="Ir a Aprender LSM"
+            <a
+              href="aprender.html"
+              class="active"
+              aria-label="Ir a Aprender LSM"
               >Aprender LSM</a
             >
           </li>
-          <li>
-            <a href="resources.html" aria-label="Ir a Recursos">Recursos</a>
-          </li>
-          <li>
-            <a href="index.html#contact" aria-label="Ir a Contacto">Contacto</a>
-          </li>
+          <li><a href="#" aria-label="Ir a Recursos">Recursos</a></li>
+          <li><a href="#about" aria-label="Ir a Nosotros">Nosotros</a></li>
+          <li><a href="#contact" aria-label="Ir a Contacto">Contacto</a></li>
+          <li><a href="#" aria-label="Ir a Login">Login</a></li>
           <li>
             <a href="#" class="cta" aria-label="Comenzar gratuitamente"
               >Empieza Gratuitamente</a
