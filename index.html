@@ -23,6 +23,7 @@
         </a>
       </div>
       <nav class="navbar" aria-label="Menú principal">
+        <span class="menu-toggle">☰</span> <!-- Botón para dispositivos móviles -->
         <ul>
           <li><a href="#hero" aria-label="Ir a inicio">Inicio</a></li>
           <li><a href="aprender.html" aria-label="Ir a Aprender LSM">Aprender LSM</a></li>
@@ -88,9 +89,18 @@
       <section id="contact">
         <h2>Contáctanos</h2>
         <form id="contactForm">
-          <input type="text" name="nombre" placeholder="Nombre" />
-          <input type="email" name="email" placeholder="Correo electrónico" />
-          <textarea name="mensaje" placeholder="Mensaje"></textarea>
+          <div>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+            <span id="errorNombre" class="error-message"></span>
+          </div>
+          <div>
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" />
+            <span id="errorEmail" class="error-message"></span>
+          </div>
+          <div>
+            <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+            <span id="errorMensaje" class="error-message"></span>
+          </div>
           <button type="submit">Enviar</button>
         </form>
       </section>
