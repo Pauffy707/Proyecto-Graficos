@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plataforma inclusiva para enseñar lenguaje de señas mexicano."
+    />
+    <title>Página de Inicio - Lenguaje de Señas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header role="banner" class="header">
+      <div class="logo">
+        <a href="index.html" aria-label="Volver al inicio de SeñApp">
+          <img
+            src="imagenes/app-icon.png"
+            alt="Logo de SeñApp"
+            class="logo-img"
+          />
+          <span>SeñApp</span>
+        </a>
+      </div>
+      <nav class="navbar" aria-label="Menú principal">
+        <span class="menu-toggle">☰</span> <!-- Botón para dispositivos móviles -->
+        <ul>
+          <li><a href="#hero" aria-label="Ir a inicio">Inicio</a></li>
+          <li><a href="aprender.html" aria-label="Ir a Aprender LSM">Aprender LSM</a></li>
+           <!--<li><a href="#" aria-label="Ir a Recursos">Recursos</a></li>-->
+          <li><a href="#about" aria-label="Ir a Nosotros">Nosotros</a></li>
+          <li><a href="#contact" aria-label="Ir a Contacto">Contacto</a></li>
+          <li>
+            <a href="#" class="cta" aria-label="Comenzar gratuitamente"
+              >Empieza Gratuitamente</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Sección Hero -->
+      <section id="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Conoce la Revolución del Aprendizaje del Lenguaje de Señas</h1>
+            <h2>Transformamos la educación con accesibilidad e inclusión para todos.</h2>
+            <p>En E-EDUCATION, estamos comprometidos con la educación inclusiva. Ofrecemos recursos y herramientas para aprender el lenguaje de señas mexicano (LSM) de manera efectiva y accesible.</p>
+            <a href="aprender.html" class="cta-button">Empieza Tu Aprendizaje Ahora</a>
+          </div>
+          <div class="hero-image-container">
+            <img src="imagenes/LMS.png" alt="Personas comunicándose a través del lenguaje de señas mexicano (LSM)" class="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Nosotros -->
+      <section id="about">
+        <h2>Nosotros</h2>
+        <div class="about-container">
+          <div class="about-card">
+            <h3>Nuestra Historia</h3>
+            <p>
+              SeñApp fue fundada en 2024 con el objetivo de hacer el aprendizaje del lenguaje de señas accesible para todos, promoviendo la inclusión y derribando barreras de comunicación.
+            </p>
+            <img src="imagenes/historia.png" alt="Icono historia" class="bottom-image">
+          </div>
+          <div class="about-card">
+            <h3>Misión</h3>
+            <p>
+              Nuestra misión es proporcionar recursos educativos de alta calidad que faciliten el aprendizaje del lenguaje de señas mexicano (LSM) y fomenten una sociedad más inclusiva.
+            </p>
+            <img src="imagenes/mision.png" alt="Dibujo de un hombre con una bandera roja, la cual es enterrada en la punta de una montaña." class="bottom-image">
+          </div>
+          <div class="about-card">
+            <h3>Nuestro Equipo</h3>
+            <p>
+              Contamos con un equipo comprometido y diverso de educadores, desarrolladores y expertos en accesibilidad, todos unidos por una pasión por la educación inclusiva.
+            </p>
+            <img src="imagenes/equipo.png" alt="Foto del equipo de SeñApp trabajando juntos" class="team-image" />
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Sección Contacto -->
+      <section id="contact">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+          <div>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" aria-label="Nombre del usuario"/>
+            <span id="errorNombre" class="error-message"></span>
+          </div>
+          <div>
+            <input type="email" id="email" name="email" placeholder="email@ejemplo.com" aria-label="Correo electronico de usuario"/>
+            <span id="errorEmail" class="error-message"></span>
+          </div>
+          <div>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí" aria-label="Mensaje del usuario"></textarea>
+            <span id="errorMensaje" class="error-message"></span>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright 2024 SeñApp</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"
+          ><img src="imagenes/icon-facebook.png" alt="Facebook"
+        /></a>
+        <a href="#" aria-label="WhatsApp"
+          ><img src="imagenes/icon-whatsapp.png" alt="WhatsApp"
+        /></a>
+        <a href="#" aria-label="X"><img src="imagenes/icon-x.png" alt="X" /></a>
+        <a href="#" aria-label="Google"
+          ><img src="imagenes/icon-Google.png" alt="Google"
+        /></a>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
