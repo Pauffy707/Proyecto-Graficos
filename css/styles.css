@@ -68,8 +68,6 @@ body {
   background-color: #fff; /* Color de la línea */
 }
 
-
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -183,18 +181,18 @@ body {
 
 .hero-text h1 {
   font-size: 2.5rem;
-  color: #4a4a8a;
+  color: #343470;
   margin-bottom: 1rem;
 }
 
 .hero-text h2 {
-  font-size: 1.5rem;
-  color: #555;
+  font-size: 1rem;
+  color: #272525;
   margin-bottom: 1rem;
 }
 
 .hero-text p {
-  color: #666;
+  color: #2b2929;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   max-width: 700px;
@@ -372,30 +370,24 @@ body {
 
 /* Footer */
 footer {
-  padding: 2rem;
+  height: 60px;
   background-color: #4a4a8a;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 0;
 }
 
 footer .social-links {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 footer .social-links a {
-  margin: 0 0.5rem;
   display: inline-block;
 }
 
 footer .social-links img {
   width: 24px;
   height: auto;
-  filter: brightness(0) invert(1); /* Cambia el color del icono a blanco */
-  transition: filter 0.3s ease;
-}
-
-footer .social-links a:hover img {
-  filter: brightness(0.8) invert(1); /* Efecto al pasar el cursor */
 }
 
 /* Media Queries */
